@@ -169,9 +169,9 @@
       var canvas = $("#mycanvas")[0];
       var ctx = canvas.getContext("2d");
       var img = new Image();
-      img.src = "ksuisbg.gif";
+      img.src = "endpig.png";
       img.onload = function() {
-        ctx.drawImage(img, 0, 0, 300, 300);
+        ctx.drawImage(img, 0, 0, 360, 300);
       }
 
       var audio = new Audio();
@@ -206,6 +206,11 @@
         $("#remain").html("残り時間：" + period);
         
     }
+
+    //残り時間が0になったときにアラームが鳴る処理
+    if(period == 0){
+      alarm();
+    }
     
  
     // 繰り返し実行する処理
@@ -229,10 +234,9 @@
   </script>
 </head>
 <body>
-    <canvas id="mycanvas" width="200" height="200">Test</canvas>
+    <canvas id="mycanvas" width="360" height="300">Test</canvas>
 
-    <div id="minuteStr">〇</div>
-    <div id="secondStr">〇</div>
+   
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
