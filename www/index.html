@@ -192,6 +192,7 @@
        period = 60* parseInt($("#minute").val()) +
            parseInt($("#second").val());
       $("#settime").html(period);
+      $("#settime").css("color", "red");
 
     }
     
@@ -199,13 +200,13 @@
     function btnAClick(e){
       active = true;
       startTime = new Date();
+      $("#settime").css("color", "#00000000");
         
     }
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
-      active = false;
-        
+      active = false; 
         
     }
 
@@ -219,8 +220,6 @@
         $("#remain").html("残り時間：" + period);
         
     }
-
-   
     
  
     // 繰り返し実行する処理
@@ -235,7 +234,9 @@
        }
        if(rest <= 0) {
          active = false;
-         alarm();
+         alarm(); 
+         $("#settime").css("color", "red");
+         
        }
         
         
