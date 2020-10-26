@@ -50,18 +50,17 @@
     
     #btnA {
         font-size: 20px;
-        position:absolute; top:380px; left:2%; width:43%; height:60px; 
+        position:absolute; top:380px; left:2%; width:30%; height:60px; 
         background-color: yellow;
-        color: green;
     }
     
     #btnB {
-        font-size: 20px;
-        position:absolute; top:380px; left:45%; width:25%; height:60px; 
+        font-size: 18px;
+        position:absolute; top:380px; left:32%; width:25%; height:60px; 
     }
 
     #btnC {
-        font-size: 10px;
+        font-size: 18px;
         position:absolute; top:380px; left:70%; width:28%; height:60px; 
     }
     
@@ -82,9 +81,9 @@
     }
 
     button {
-      color: blue;
+      color: black;
       font-style: italic;
-      border-radius: 20px;
+      border-radius: 40px;
     }
 
     #time::after {
